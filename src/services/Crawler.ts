@@ -43,11 +43,6 @@ class Crawler {
             return resolve(produto);
           }
 
-          // Se não encontrou o nome, então não há produto
-          if (!produtoNameString) {
-            return resolve(null);
-          }
-
           produto.name = produtoNameString.trim();
 
           this.extractPrice(produto, selector);
