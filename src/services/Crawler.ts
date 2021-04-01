@@ -38,7 +38,7 @@ class Crawler {
               return resolve(null);
             }
 
-			produto.name = unavailableProdut;
+	    produto.name = unavailableProdut;
             produto.avaiability = false;
             return resolve(produto);
           }
