@@ -9,7 +9,7 @@ class Crawler {
       https.get(url.trim(), (res) => {
         let data = "";
 
-        res.on("data", (chunk) => (data += chunk));
+        res.on("data", (chunk) => data += chunk);
 
         res.on("error", (err) => reject(err));
 
